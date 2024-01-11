@@ -31,3 +31,18 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
+
+.mainImg {
+  background-color: aqua;
+  background-image: url(../img/white-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: 101% 101%;
+  background-position: left;
+  width: 100%;
+  padding: 20px;
+  img {
+    height: 200px;
+    width: 80%;
+    object-fit: cover;
+  }
+}
