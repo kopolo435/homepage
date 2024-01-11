@@ -7,13 +7,24 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  padding: 70px;
 }
 .information {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 40px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .socials {
     display: flex;
+  }
+
+  p {
+    max-width: 40em;
   }
 }
 
@@ -33,26 +44,60 @@ footer {
 }
 
 .mainImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  float: left;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    transform-origin: bottom right;
+  }
+
+  p {
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+    z-index: 2;
+  }
+}
+.ribbon {
   background-color: aqua;
   background-image: url(../img/white-triangle.svg);
   background-repeat: no-repeat;
   background-size: 101% 101%;
   background-position: left;
   width: 100%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  img {
-    height: 300px;
-    width: auto;
-    object-fit: contain;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+@media (min-width: 600px) {
+  .information {
+    display: block;
+    background-color: white;
   }
 
-  p {
-    transform: translateY(-39px);
-    font-size: 30px;
-    color: black;
-    font-weight: 700;
+  .mainImg {
+    top: 11px;
+
+    img {
+      transform: scale(1.3);
+    }
+
+    p {
+      right: -131px;
+      top: -56px;
+    }
   }
 }
