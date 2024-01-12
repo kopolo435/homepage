@@ -14,8 +14,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,8 +61,8 @@ footer {
 
   p {
     position: absolute;
-    bottom: 0;
-    font-size: 30px;
+    bottom: 15px;
+    font-size: 26px;
     color: black;
     font-weight: 700;
     z-index: 2;
@@ -86,18 +85,25 @@ footer {
   .information {
     display: block;
     background-color: white;
+
+    h2 {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 28px;
+    }
   }
 
   .mainImg {
     top: 11px;
 
     img {
-      transform: scale(1.3);
+      transform: scale(1.4);
     }
 
     p {
       right: -131px;
       top: -56px;
+      font-size: 30px;
     }
   }
 }
