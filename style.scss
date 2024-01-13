@@ -10,15 +10,18 @@ main {
   position: relative;
 }
 .information {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 15px;
   .socials {
     display: flex;
+    gap: 20px;
+    i {
+      font-size: 30px;
+      color: black;
+    }
   }
 
   p {
@@ -76,7 +79,7 @@ aside {
   flex-direction: column;
   align-items: center;
   img {
-    height: 200px;
+    height: 350px;
     width: auto;
     object-fit: contain;
     transform-origin: bottom right;
@@ -106,8 +109,15 @@ aside {
 
 footer {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   background-color: aqua;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 1300px;
 }
 
 .contact {
@@ -135,11 +145,16 @@ footer {
   .information {
     display: block;
     background-color: white;
+    padding: 0px 20px;
 
     h2 {
       margin-top: 30px;
       text-align: center;
       font-size: 28px;
+    }
+
+    .socials {
+      display: none;
     }
   }
 
@@ -147,21 +162,18 @@ footer {
     top: 11px;
 
     img {
+      width: 200px;
       transform: scale(1.4);
     }
 
     p {
       right: -131px;
-      top: -68px;
+      top: -51px;
       font-size: 30px;
     }
   }
 
-  #projectsContainer {
-    justify-items: flex-start;
-  }
-
-  footer {
+  .footerContainer {
     flex-direction: row;
     padding: 10px 10vw;
   }
@@ -175,6 +187,7 @@ footer {
   .information {
     display: block;
     background-color: white;
+    padding: 20px;
 
     h2 {
       margin-bottom: 10px;
@@ -182,18 +195,24 @@ footer {
       text-align: left;
       font-size: 28px;
     }
+
+    .socials {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 
   .mainImg {
     top: 11px;
 
     img {
+      height: 200px;
       transform: scale(1.7);
       transform-origin: center right;
     }
 
     p {
-      right: 43px;
+      right: 67px;
       font-size: 30px;
       top: auto;
       bottom: -45px;
