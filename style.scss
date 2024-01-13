@@ -65,11 +65,6 @@ aside {
   }
 }
 
-footer {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .mainImg {
   display: flex;
   flex-direction: column;
@@ -109,7 +104,27 @@ footer {
   z-index: -1;
 }
 
-@media (min-width: 600px) {
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+
+.contact {
+  padding: 10px 10vw;
+}
+
+.footerImg {
+  flex: 1;
+  img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+@media (min-width: 662px) {
   main {
     padding: 50px 10vw;
   }
@@ -144,6 +159,15 @@ footer {
 
   #projectsContainer {
     justify-items: flex-start;
+  }
+
+  footer {
+    flex-direction: row;
+    padding: 10px 10vw;
+  }
+
+  .contact {
+    padding: 0px;
   }
 }
 
