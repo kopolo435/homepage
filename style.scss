@@ -186,6 +186,22 @@ footer {
   }
 }
 
+.tecnologyContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 20px;
+}
+
+.tecnology {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  i {
+    font-size: 50px;
+  }
+}
+
 @media (min-width: 662px) {
   main {
     padding: 50px 10vw;
