@@ -1,3 +1,10 @@
+:root {
+  --main-color: hsl(126, 20%, 37%);
+  --secundary-color: hsl(125, 16%, 59%);
+  --main-text-color: white;
+  --secundary-text-color: white;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -24,6 +31,10 @@ main {
   p {
     max-width: 40em;
   }
+
+  i {
+    color: black !important;
+  }
 }
 
 .socials {
@@ -31,7 +42,6 @@ main {
   gap: 20px;
   i {
     font-size: 30px;
-    color: black !important;
   }
 }
 
@@ -63,6 +73,7 @@ aside {
 .projectCard {
   width: 100%;
   max-width: 300px;
+  background-color: var(--secundary-color);
   box-shadow: -4px 6px 13px 1px rgba(168, 156, 156, 0.75);
   -webkit-box-shadow: -4px 6px 13px 1px rgba(168, 156, 156, 0.75);
   -moz-box-shadow: -4px 6px 13px 1px rgba(168, 156, 156, 0.75);
@@ -113,19 +124,22 @@ aside {
     width: auto;
     object-fit: contain;
     transform-origin: bottom right;
+    box-shadow: -1px 3px 29px -9px rgba(48, 48, 48, 0.75);
+    -webkit-box-shadow: -1px 3px 29px -9px rgba(48, 48, 48, 0.75);
+    -moz-box-shadow: -1px 3px 29px -9px rgba(48, 48, 48, 0.75);
   }
 
   p {
     position: absolute;
     bottom: 15px;
     font-size: 26px;
-    color: black;
-    font-weight: 700;
+    color: var(--main-text-color);
+    font-weight: 800;
     z-index: 2;
   }
 }
 .ribbon {
-  background-color: aqua;
+  background-color: var(--main-color);
   background-image: url(../img/white-triangle.svg);
   background-repeat: no-repeat;
   background-size: 101% 101%;
@@ -140,7 +154,7 @@ aside {
 footer {
   display: flex;
   justify-content: center;
-  background-color: aqua;
+  background-color: var(--main-color);
 }
 
 .footerContainer {
@@ -151,9 +165,17 @@ footer {
 
   h2 {
     text-align: center;
+    font-weight: 800;
+    color: var(--main-text-color);
   }
   .socials {
     justify-content: center;
+    i {
+      color: var(--secundary-text-color);
+    }
+  }
+  p {
+    color: var(--secundary-text-color);
   }
 }
 
@@ -164,6 +186,7 @@ footer {
   span {
     display: none;
     font-size: 30px;
+    color: var(--secundary-text-color);
   }
 }
 
@@ -202,6 +225,10 @@ footer {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 @media (min-width: 662px) {
   main {
     padding: 50px 10vw;
@@ -235,9 +262,6 @@ footer {
     img {
       height: 200px;
       transform: scale(1.4);
-      box-shadow: -1px 3px 29px -9px rgba(48, 48, 48, 0.75);
-      -webkit-box-shadow: -1px 3px 29px -9px rgba(48, 48, 48, 0.75);
-      -moz-box-shadow: -1px 3px 29px -9px rgba(48, 48, 48, 0.75);
     }
 
     p {
@@ -312,7 +336,7 @@ footer {
     }
 
     p {
-      right: 67px;
+      right: 41px;
       font-size: 30px;
       top: auto;
       bottom: -45px;
